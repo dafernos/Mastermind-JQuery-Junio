@@ -1,0 +1,115 @@
+body{
+	background: #e2f1fc;
+	text-align: center;
+}
+main{
+	margin:0 auto;
+	display: grid;
+	grid-template-columns: 8fr 1fr;
+	justify-content: center;
+	grid-column-gap: 2%;
+	min-height: 500px;
+	width: 50%;
+	
+}
+#juego{
+	background: lightblue;
+}
+.juego{
+	background: red;
+}
+.colores{
+	background: #e2f1fc;
+	display: grid;
+	grid-template-columns: 55%;
+}
+.color{
+	margin-bottom: 5px;
+}
+.wrapper{
+	width: 100%;
+	margin: 0 auto;
+}
+.wrapper.cuatro{
+	width: 60%;
+	height: 60%;
+}
+.circle{
+	background: lightgray ;
+	padding: 1em;
+	float:left;
+	margin-right:3%;
+	border-radius: 50%;
+	border: 3px solid #333;
+}
+.circle:last-child{
+  margin-right:0;
+}
+.circle:before{
+	content:"";
+	display:block;
+	padding-top:100%;
+	float: left; 
+}
+#filas>div .circle{
+	width: 21%;
+}
+#filas{
+	display: flex;
+	flex-direction:column-reverse;
+}
+.vacio{
+	background: lightgray;
+	width:0.001% !important;
+}
+#filas>div{
+	display: grid;
+	grid-template-columns: repeat(2,50%);
+	margin: 5px;
+}
+#botcom{
+	background: rgba(125,20,20,0.2);
+}
+input{
+	color:white;
+	background: red;
+	border: 2px solid white;
+	
+}
+#ganado{
+	display: none;
+	position:fixed;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	background:rgba(20,20,20,0.3);
+	height: 100vh;
+}
+#botones{
+	margin: 20px 0 ;
+}
+#conad>.circle{
+	width: 20%;
+	display: inline;
+}
+#caja{
+	background: white;
+}
+#comprobar{
+	margin-right: 50px;
+	
+}
+.cuatro{
+	display: flex;
+}
+.linea{
+	display: flex;
+	
+}
+#conad{
+	display: none;
+}
+#fin{
+	width: 25%;
+	height: 50%;
+}
