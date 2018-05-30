@@ -11,7 +11,6 @@
 	//Mastermin con clousure
 	var mastermind=(function(){
 		let combinacion=[];
-		let negras,blancas;
 		let init = function(){
 			generaCombinacion();
 			mostrar();
@@ -25,8 +24,7 @@
 			let salir;
 			let copiacombinacion=combinacion.slice();
 			//negros(en su sitio)
-			blancas=0;
-			negras=0; 
+			let blancas,negras=0; 
 			for (let i = 0; i < intento.length; i++) {
 				if(intento[i]===copiacombinacion[i]){
 					negras++; 
@@ -41,7 +39,7 @@
 					if(copiacombinacion[j]===intento[i] && salir===false){
 						blancas++;
 						copiacombinacion[j]=undefined;
-						salir=true;
+						break;
 					}
 				}
 			}
