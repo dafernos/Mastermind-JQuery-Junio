@@ -24,7 +24,8 @@
 			let salir;
 			let copiacombinacion=combinacion.slice();
 			//negros(en su sitio)
-			let blancas,negras=0; 
+			let blancas=0;
+			let negras=0; 
 			for (let i = 0; i < intento.length; i++) {
 				if(intento[i]===copiacombinacion[i]){
 					negras++; 
@@ -148,7 +149,6 @@
 			//Poner aciertos (bolas negras)
 			if (aciertos.negras > 0 ){
 				for (let i = 0; i < aciertos.negras; i++) {
-					console.log($bolAcierto);
 					$($bolAcierto[i]).css('background','black');			
 				};
 			};
